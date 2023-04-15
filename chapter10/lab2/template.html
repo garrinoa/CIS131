@@ -8,7 +8,7 @@
 	
 	Date Created: February 4, 2023
 	
-	Date Updated: April 1, 2023
+	Date Updated: April 15, 2023
 
 -->
 
@@ -29,6 +29,21 @@
 	
 	<body>
 		<div id="wrapper">
+			<!-- Mobile Nav -->
+			<nav class="mobile-nav">
+				<div id="nav-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="partnership.html">Partnership</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="faqs.html">FAQs</a>
+					<a href="contact.html">Contact</a>
+				</div>
+				<a class="nav-icon" onclick="menu()">
+					<div id="icon">&#9776;</div>
+				</a>
+			</nav>
+		
 			<!-- Use header for website name/logo (static content) -->
 			<header>
 				<div class="tab-desk">
@@ -42,7 +57,7 @@
 			</header>
 		
 			<!-- Use navigation area for hyperlinks within website (static content) -->
-			<nav>
+			<nav class="tab-desk">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About Us</a></li>
@@ -67,5 +82,6 @@
 				<p>&copy; Copyright 2023. All Rights Reserved.</p>
 			</footer>
 		</div>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
