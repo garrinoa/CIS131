@@ -1,0 +1,217 @@
+/*
+Name: Noah Garrison
+Date Created: 20 February 2023
+Date Updated: 11 March 2023
+Filename: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, footer, main, footer, img, h1, h3, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Body & Img */
+body {
+	background-color: #f6eee4;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Style Rule - Mobile Viewport */
+.mobile h1 {
+	font-family: 'Emblema One', cursive;
+}
+
+.mobile h3 {
+	font-family: 'Lora', serif;
+}
+
+/* Style Rule - Show mobile class and hide tab-desk class. */
+.mobile {
+	display: block;
+}
+
+.tab-desk {
+	display: none;
+}
+
+/* Style Rule - Header */
+h1 {
+	padding: 2%;
+	text-align: center;
+}
+
+h3 {
+	padding: 2%;
+	text-align: center;
+}
+
+/* Navigation Area */
+nav {
+	background-color: #2a1f14
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	display: block;
+	font-size: 1.5em;
+	font-family: Geneva, Arial, sans-serif;
+	font-weight: bold;
+	border-top: solid;
+	border-top-width: 0.5px;
+	border-top-color: #f6eee4;
+}
+
+nav li a {
+	color: #f6eee4;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+/* Style Rule - Main Content */
+main {
+	padding: 2%;
+	font-family: 'Lora', serif;
+}
+
+main p {
+	font-size: 1.25em;
+}
+
+main h3 {
+	padding-top: 2%;
+}
+
+main ul {
+	list-style-type: square;
+}
+
+.link {
+	color: #4d3319;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;	
+}
+
+.action {
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.round {
+	border-radius: 6px;
+}
+
+#info ul {
+	margin-left: 10%;
+}
+
+#contact {
+	text-align: center;
+}
+
+.tel-link {
+	background-color: #2a1f14;
+	padding: 2%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tel-link a {
+	color: #f6eee4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Footer Content */
+footer {
+	text-align: center;
+	font-size: 0.85em;
+	background-color: #2a1f14;
+	color: #f6eee4;
+	padding: 1% 0%;
+}
+
+footer a {
+	color: #f3e6d8;
+	text-decoration: none;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 620px), print {
+	/* Tablet viewport: Show tab-desk class, hide mobile class */
+	.mobile {
+		display: none;
+	}
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	/* Tablet viewport: Style rules for nav area */
+	nav li {
+		border-top: none;
+		display: inline-block;
+		font-size: 1.25em;
+	}
+	
+	nav li a {
+		padding: 0.5em;
+	}
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1000px), print {
+	/* Desktop viewport: style rules for nav area */
+	nav li {
+		font-size: 1.5em;
+	}
+	
+	nav li a {
+		padding: 0.5em 1.5em;
+	}
+	
+	nav li a:hover {
+		color: #2a1f14;
+		background-color: #f6eee4;
+	}
+	
+	/* Desktop viewport: Style rules for main content */
+	#info ul {
+		margin-left: 5%;
+	}
+}
+
+/* Media query for large desktop viewports */
+@media screen and (min-width: 1921px), print {
+	body {
+		background: linear-gradient(#f6eee4, #78593a);
+	}
+	
+	#wrapper {
+		width: 1920px;
+		margin: 0 auto;
+	}
+	
+	main {
+			background-color: #f6eee4;
+	}
+}
+
+/* Media query for print */
+@media print {
+	body {
+		background-color: #ffffff;
+		color: #000000;
+	}
+}

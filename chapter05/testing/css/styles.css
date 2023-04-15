@@ -1,0 +1,23 @@
+#testid {
+	font-size: 2em;
+}
+
+.testclass1 {
+	font-weight: bold;
+}
+
+.testclass2 {
+	text-decoration: underline;
+}
+
+.testclass3 {
+	font-style: italic;
+}
+
+.x {
+	color: red;
+}
+
+#testid .testclass1 {
+	font-family: "Lucida Console";
+}
